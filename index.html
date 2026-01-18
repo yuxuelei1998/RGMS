@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGMS - Ranking of Global Music School 2026</title>
+    <meta name="description" content="The comprehensive global ranking of top music schools and conservatories.">
+    <!-- Google Fonts for Premium Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-area">
+                <i class="fa-solid fa-music logo-icon"></i>
+                <div class="logo-text">
+                    <h1>RGMS</h1>
+                    <span>Ranking of Global Music School</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">2026 Rankings</a></li>
+                    <li><a href="#">Methodology</a></li>
+                    <li><a href="#">Insights</a></li>
+                    <li><a href="#" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-subtitle">The World's Leading Music Education Assessment</span>
+            <h2 class="hero-title">Discover the World's<br>Top Music Conservatories</h2>
+            <p class="hero-desc">The 2026 ranking analyses over 500 institutions based on artistic excellence, faculty
+                reputation, and career outcomes.</p>
+        </div>
+    </section>
+
+    <main class="ranking-container">
+        <div class="container">
+
+            <div class="controls-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search university, country..."
+                        aria-label="Search schools">
+                </div>
+
+                <div class="filters">
+                    <select id="regionFilter" aria-label="Filter by Region">
+                        <option value="all">All Regions</option>
+                        <option value="North America">North America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Asia">Asia</option>
+                    </select>
+
+                    <button id="sortBtn" class="sort-btn">
+                        Sort by Score <i class="fa-solid fa-arrow-down-9-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-header">
+                <div class="col-rank">Rank</div>
+                <div class="col-name">Institution</div>
+                <div class="col-location">Location</div>
+                <div class="col-stats">Score</div>
+            </div>
+
+            <div id="schoolList" class="school-list">
+                <!-- Javascript will populate this -->
+                <div class="loading-spinner">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i> Loading rankings...
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 RGMS (Ranking of Global Music School). All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
